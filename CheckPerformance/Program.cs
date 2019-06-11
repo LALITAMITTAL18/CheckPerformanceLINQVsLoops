@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Diagnostics;
 
-namespace CheckPerformance
+namespace CheckPerformanceLINQVSLoops
 {
     class Program
     {
@@ -19,7 +19,7 @@ namespace CheckPerformance
             sw.Start();
             int sumloop = getSumfromLoop(range);    
             sw.Stop();
-            Console.WriteLine("Legacy Loop(no lood cut) : Sum = {0} , Time Taken = {1} ", sumloop, sw.Elapsed);
+            Console.WriteLine("Legacy Loop(no loop cut) : Sum = {0} , Time Taken = {1} ", sumloop, sw.Elapsed);
             
             sw.Restart();
             sw.Start();
